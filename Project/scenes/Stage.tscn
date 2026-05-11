@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cw8rqslfnd4ih"]
+
+[ext_resource type="Script" uid="uid://18xvr0bs2e5l" path="res://scripts/Stage.gd" id="1_stage"]
+[ext_resource type="Script" uid="uid://u1cq2p7vqclp" path="res://scripts/LookUpButtonTrick.gd" id="2_trick"]
+[ext_resource type="PackedScene" uid="uid://b1jumpbtn0001" path="res://scenes/JumpButton.tscn" id="3_button"]
+
+[sub_resource type="RectangleShape2D" id="RS_left"]
+size = Vector2(700, 64)
+
+[sub_resource type="RectangleShape2D" id="RS_right"]
+size = Vector2(500, 64)
+
+[sub_resource type="RectangleShape2D" id="RS_death"]
+size = Vector2(2400, 80)
+
+[node name="Stage" type="Node2D" unique_id=422232321]
+script = ExtResource("1_stage")
+
+[node name="LeftGround" type="StaticBody2D" parent="." unique_id=1532645256]
+position = Vector2(300, 600)
+
+[node name="Visual" type="Polygon2D" parent="LeftGround" unique_id=736837705]
+color = Color(0.4, 0.3, 0.2, 1)
+polygon = PackedVector2Array(-350, -32, 350, -32, 350, 32, -350, 32)
+
+[node name="Collision" type="CollisionShape2D" parent="LeftGround" unique_id=643367884]
+position = Vector2(3, -2)
+shape = SubResource("RS_left")
+
+[node name="RightGround" type="StaticBody2D" parent="." unique_id=172409654]
+position = Vector2(1030, 600)
+
+[node name="Visual" type="Polygon2D" parent="RightGround" unique_id=604882840]
+color = Color(0.4, 0.3, 0.2, 1)
+polygon = PackedVector2Array(-250, -32, 250, -32, 250, 32, -250, 32)
+
+[node name="Collision" type="CollisionShape2D" parent="RightGround" unique_id=842025629]
+shape = SubResource("RS_right")
+
+[node name="DeathZone" type="Area2D" parent="." unique_id=1092027325]
+position = Vector2(640, 760)
+
+[node name="Collision" type="CollisionShape2D" parent="DeathZone" unique_id=2111718757]
+shape = SubResource("RS_death")
+
+[node name="Trick" type="Node2D" parent="." unique_id=357538955]
+script = ExtResource("2_trick")
+button_scene = ExtResource("3_button")

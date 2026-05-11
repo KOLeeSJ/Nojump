@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cvp5sdccupsyo"]
+
+[ext_resource type="Texture2D" uid="uid://dj5e8hg8d5fjd" path="res://scenes/Map.png" id="1_vmyjo"]
+
+[node name="Stage1" type="TileMapLayer" unique_id=450210645]
+
+[node name="Map" type="Sprite2D" parent="." unique_id=1318664617]
+position = Vector2(640.5, 362)
+scale = Vector2(0.9083807, 0.9375)
+
+[node name="Map2" type="Sprite2D" parent="." unique_id=1615508585]
+position = Vector2(705, 390)
+texture = ExtResource("1_vmyjo")
