@@ -46,6 +46,24 @@
 
 ---
 
+## Addendum (2026-05-14) — 2-person Team Transition & Strategy Initialization
+### Organization
+- **Team**: 2-person side project (10h/week per person, 3-month target).
+- **Harness**: `fivecircles` moved into `Project/fivecircles/`.
+- **Git**: `dev` branch created from `main`. Branching strategy defined (`main`, `dev`, `feature/stage-n`).
+- **Strategy**: Godot folder strategy defined (`architecture/specs/folder_strategy.md`).
+
+### Decisions
+- Interest-driven development with heavy AI agent assistance.
+- Focus on brainstorming and implementing "Tricks" in maps.
+- 1-person-per-stage responsibility.
+
+### Next
+- Proceed with Phase 1 validation (In-Engine check).
+- Set up stage-specific feature branches.
+
+---
+
 ## Addendum (2026-05-11) — Repo 정리 + 하네스 동기화
 ### Refactor
 - 게임 프로젝트 폴더 `nojump/` → `Project/`로 개명 (Godot 프로젝트와 하네스 문서를 명확히 분리).
