@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3]
 
-[ext_resource type="Script" path="res://scripts/Player.gd" id="1_script"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_00.png" id="2_w0"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_01.png" id="3_w1"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_02.png" id="4_w2"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_03.png" id="5_w3"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_04.png" id="6_w4"]
-[ext_resource type="Texture2D" path="res://Character/walk_frames/walk_05.png" id="7_w5"]
+[ext_resource type="Script" path="res://entities/Player/Player.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_00.png" id="2_w0"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_01.png" id="3_w1"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_02.png" id="4_w2"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_03.png" id="5_w3"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_04.png" id="6_w4"]
+[ext_resource type="Texture2D" path="res://entities/Player/assets/walk_frames/walk_05.png" id="7_w5"]
 
 [sub_resource type="SpriteFrames" id="SF_player"]
 animations = [{

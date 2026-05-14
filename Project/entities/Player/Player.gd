@@ -61,7 +61,7 @@ func die() -> void:
 	_change_state(State.DEATH)
 
 
-# Phase 2 트릭 시스템 공통 인터페이스(GDD §8.2): 모든 트릭은 발동 시 이 함수로 효과를 전달.
+# Phase 2 ?�릭 ?�스??공통 ?�터?�이??GDD §8.2): 모든 ?�릭?� 발동 ?????�수�??�과�??�달.
 func apply_jump_impulse(force: float) -> void:
 	if current_state == State.DEATH:
 		return
@@ -131,7 +131,7 @@ func _animation_for(state: State) -> StringName:
 	return &"idle"
 
 
-# Phase 4 정식 스프라이트 분기 전, 동일 프레임에 색조만 입혀 상태 식별을 가능하게 함.
+# Phase 4 ?�식 ?�프?�이??분기 ?? ?�일 ?�레?�에 ?�조�??��? ?�태 ?�별??가?�하�???
 func _modulate_for(state: State) -> Color:
 	match state:
 		State.LOOK_UP: return Color(1.4, 1.4, 0.6)

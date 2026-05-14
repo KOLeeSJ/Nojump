@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bchu3qa07sefc"]
 
-[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="1_player"]
-[ext_resource type="PackedScene" path="res://scenes/Stage.tscn" id="2_stage"]
+[ext_resource type="PackedScene" path="res://entities/Player/Player.tscn" id="1_player"]
+[ext_resource type="PackedScene" path="res://stages/Stage1/Stage.tscn" id="2_stage"]
 
 [node name="Main" type="Node2D" unique_id=815823928]
 

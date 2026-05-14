@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1jumpbtn0001"]
 
-[ext_resource type="Script" path="res://scripts/JumpButton.gd" id="1_button"]
+[ext_resource type="Script" path="res://entities/JumpButton/JumpButton.gd" id="1_button"]
 
 [sub_resource type="RectangleShape2D" id="RS_button"]
 size = Vector2(40, 24)

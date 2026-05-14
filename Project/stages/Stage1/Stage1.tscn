@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dvhwwwo4m25jk"]
 
-[ext_resource type="TileSet" uid="uid://bnjmptlst0001" path="res://Resource/MapTileSet.tres" id="1_tileset"]
-[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="2_usqaj"]
+[ext_resource type="TileSet" uid="uid://bnjmptlst0001" path="res://resources/MapTileSet.tres" id="1_tileset"]
+[ext_resource type="PackedScene" path="res://entities/Player/Player.tscn" id="2_usqaj"]
 
 [node name="Stage1" type="TileMapLayer" unique_id=319707613]
 position = Vector2(-1, 1)

@@ -1,7 +1,7 @@
 class_name LookUpButtonTrick
 extends Trick
 
-# GDD §3.4 확정 후보: "낭떠러지 앞에서 위쪽을 일정 횟수 응시 → 화면 위에서 버튼 낙하 → 밟으면 점프 효과".
+# GDD §3.4 ?�정 ?�보: "??��?��? ?�에???�쪽???�정 ?�수 ?�시 ???�면 ?�에??버튼 ?�하 ??밟으�??�프 ?�과".
 
 @export var button_scene: PackedScene
 @export var look_up_threshold: float = 1.0
