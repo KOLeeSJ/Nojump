@@ -12,7 +12,7 @@
 - [x] 폴더 구조 (`scenes/`, `scripts/`, `assets/`, `Character/`)
 - [x] `.gitignore`, `.gitattributes`, `.editorconfig`
 - [x] 입력 액션 매핑 (`move_left/right/down`, `look_up`, `jump`, `interact`)
-- [x] GDScript 정적 타입 컨벤션 적용 (`Player.gd`)
+- [x] GDScript 정적 타입 컨벤션 적용 (`entities/Player/Player.gd`)
 - [x] 빈 씬 빌드·실행 확인 (개발 OS)
 
 → ✅ **Phase 0 검증 게이트 통과**
@@ -21,15 +21,15 @@
 
 ## Phase 1 — Core Loop Prototype  ★ 첫 핵심 게이트
 ### 구현
-- [x] 캐릭터 컨트롤러: 좌우 이동 + 중력 + 낙하 (`scripts/Player.gd`)
+- [x] 캐릭터 컨트롤러: 좌우 이동 + 중력 + 낙하 (`entities/Player/Player.gd`)
 - [x] 점프 키 입력 수신 + *결과 없음* 처리 (`_register_jump_input`)
 - [x] 상태 머신 7개 (IDLE/WALK/FALL/LOOK_UP/LOOK_DOWN/JUMP_INPUT/DEATH)
 - [x] `jump_attempted` 시그널
 - [x] `die()` 함수 정의
-- [x] 사망 → 즉시 재시작 루프 (`scripts/Stage.gd` `DeathZone` Area2D + `reload_current_scene`)
-- [x] 테스트용 단일 스테이지 — 좌측 바닥 + 130px 갭 + 우측 바닥 + DeathZone (`scenes/Stage.tscn`)
+- [x] 사망 → 즉시 재시작 루프 (`stages/Stage1/Stage.gd` `DeathZone` Area2D + `reload_current_scene`)
+- [x] 테스트용 단일 스테이지 — 좌측 바닥 + 130px 갭 + 우측 바닥 + DeathZone (`stages/Stage1/Stage.tscn`)
 - [x] **첫 트릭 구현** — "절벽 앞 위쪽 응시 → 버튼 낙하 → 밟으면 점프 효과" (GDD §3.4)
-    - [x] `LOOK_UP` 상태 지속 시간 측정 (≥ 1.0s) (`scripts/LookUpButtonTrick.gd`)
+    - [x] `LOOK_UP` 상태 지속 시간 측정 (≥ 1.0s) (`stages/Stage1/LookUpButtonTrick.gd`)
     - [x] 화면 상단(580, -100)에서 `JumpButton` 낙하, 지면(556) 안착
     - [x] 버튼 밟으면 `apply_jump_impulse(-600)`
 - [x] 트릭 인터페이스 1차 초안 — `Trick.activate(player, impulse)` (`scripts/Trick.gd`)

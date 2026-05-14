@@ -50,8 +50,10 @@
 ### Organization
 - **Team**: 2-person side project (10h/week per person, 3-month target).
 - **Harness**: `fivecircles` moved into `Project/fivecircles/`.
-- **Git**: `dev` branch created from `main`. Branching strategy defined (`main`, `dev`, `feature/stage-n`).
+- **Reorganization**: `entities/`, `stages/`, `resources/` 폴더 기반 모듈형 구조로 대규모 개편 완료. `.tscn`, `.gd` 내 내부 경로 자동 업데이트 수행.
+- **Git**: `dev` branch created from `main`. Branching strategy defined (`main`, `dev`, `feature/stage-n`). Commit convention established.
 - **Strategy**: Godot folder strategy defined (`architecture/specs/folder_strategy.md`).
+- **Summary**: 팀원 공유용 `fivecircles/work/reorganization_summary.md` 작성 완료.
 
 ### Decisions
 - Interest-driven development with heavy AI agent assistance.
