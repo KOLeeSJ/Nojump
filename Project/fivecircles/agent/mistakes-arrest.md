@@ -30,3 +30,15 @@
 - **Symptom (í˜„ìƒ)**: ì–´ë–¤ ì—ëŸ¬ ë©”ì‹œì§€ë‚˜ ë¶€ì‘ìš©ì´ ë‚˜íƒ€ë‚¬ëŠ”ì§€ ê¸°ìˆ .
 - **Detection (íƒì§€)**: ì–´ë–»ê²Œ ë¬¸ì œë¥¼ ë°œê²¬í–ˆëŠ”ì§€ ê¸°ìˆ .
 - **Arrest (í•´ê²°/ë°©ì§€)**: ì–´ë–»ê²Œ í•´ê²°í–ˆìœ¼ë©°, ì•ìœ¼ë¡œ ì–´ë–»ê²Œ ì˜ˆë°©í•  ê²ƒì¸ì§€ ê¸°ìˆ .
+
+---
+
+## ÀÎ½Ã´øÆ® ·Î±×
+
+### Incident (2026-05-14) - Git SSH È£½ºÆ® Å° °ËÁõ ½ÇÆĞ
+- **Mistake (¿øÀÎ)**: ºñ´ëÈ­Çü È¯°æ(PowerShell µî)¿¡¼­ SSH¸¦ ÅëÇÑ Ã¹ ±ê push ½Ã, È£½ºÆ® Å° °ËÁõ ´Ü°è¿¡¼­ ¸ØÃß°Å³ª ½ÇÆĞÇÔ.
+- **Symptom (Çö»ó)**: `Host key verification failed. fatal: Could not read from remote repository.` ¿¡·¯ ¹ß»ı.
+- **Detection (Å½Áö)**: `git push` ½ÇÇà °á°ú 1 ¿¡·¯ ÄÚµå È®ÀÎ.
+- **Arrest (ÇØ°á/¹æÁö)**: 
+    1. Ã¹ ¿¬°á ½Ã `git -c core.sshCommand="ssh -o StrictHostKeyChecking=no"` ¿É¼ÇÀ» »ç¿ëÇÏ°Å³ª,
+    2. `ssh-keyscan github.com` °á°ú¸¦ `known_hosts`¿¡ ¸í½ÃÀûÀ¸·Î Ãß°¡ÇÏ¿© ÇØ°á.
